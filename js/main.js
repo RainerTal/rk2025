@@ -99,3 +99,13 @@ jQuery(document).ready(function( $ ) {
 
 });
 
+window.fientaSettings = {
+  // lightbox background color
+  background: 'rgba(8, 77, 8, 0.6)',
+  // modal content border radius
+  border_radius: '60px',
+  color: 'red'};
+ 
+  $(document).ready(function() {
+     $('.venobox').venobox();
+   });
