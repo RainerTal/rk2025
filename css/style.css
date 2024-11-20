@@ -556,6 +556,8 @@ h6 {
 }
 
 .row {
+  display: -webkit-box; 
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
 }
@@ -572,18 +574,17 @@ h6 {
 }
 
 #telokirjeldus {
-  content-visibility: hidden ;
-
+  display: none ;
 }
 
 /* Kui ekraan on vaike */
 
 @media screen and (max-width: 768px) {
   #kirjeldus p {
-      content-visibility: hidden ;
+      display: none;
   }
   .column {
-    content-visibility: hidden ;
+    display: none;
     
   }
 
@@ -592,11 +593,11 @@ h6 {
   }
   
   #telokirjeldus {
-    content-visibility: visible ;
+    display: flex;
   
   }
   #telokirjeldus p {
-    content-visibility: visible ;
+    display: flex;
     font-weight: 700px;
     line-height: 32px;
     text-align: justify;
